@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- heading section -->
+    <div id="heading-section">
+        <div class="container1">
+            <h3>Dummy Heading</h3>
+            <p>This is a static sign-up page. You need to input name, email address, your profession and password. A basic input validation will be conducted and hints will be given if not valid. Not personal information is kept nor sent to any database.</p>
+        </div>
+    </div>
+
+
+    <!-- login-section -->
+    <div id="login-section">
+        <p id="step">Step 1 of 3 • <span style="color:#9F9F9F">• •</span></p>
+
+        <div class="container2">
+            <h1>Let's set up your account</h1>
+            <p>Already have an account? <a href="#">Sign in</a></p>
+
+            <form id="signup-form" autocomplete="off">
+                <div>
+                    <label for="name">Your name</label>
+                    <input type="text" placeholder="Your name" id="name" autocomplete="chrome-off" required />
+                    <p id="name-error" class="input-error">Please enter a name</p>
+                </div>
+
+                <div>
+                    <label for="email">Email address</label>
+                    <input type="email" placeholder="Email address" id="email" autocomplete="chrome-off" required />
+                    <p id="email-error" class="input-error">Please enter a valid email address</p>
+                </div>
+
+                <div>
+                    <select required id="selection">
+                        <option value="" disabled style="color:lightgray" selected>I would describe my user type as
+                        </option>
+                        <option value="developer">Developer</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                    <img class="icon"
+                        src="http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png"
+                        id="drop-down-icon" />
+                    <p id="select-error" class="input-error">Please select one</p>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" minlength="8" id="password" required />
+                    <img class="icon"
+                        src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-16.png"
+                        id="eye-icon" />
+                    <p id="password-error">Minimum 8 characters</p>
+                    <input type="submit" id="submit-button" value="Next">
+                </div>
+            </form>
+        </div>
+
+        <div id="terms-privacy">
+            <p>By clicking the "next" button, you agree to creating a free account, and to <a href="#">Terms of
+                    Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

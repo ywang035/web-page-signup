@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: #373737;
+}
+
+a {
+    text-decoration: none;
+    color: #2C70FA;
+}
+
+/* heading seciton */
+#heading-section {
+    width: 33%;
+    height: 100vh;
+    float: right;
+    background-color: #286EFA;
+    
+}
+
+#heading-section .container1 {
+    box-sizing: border-box;
+    margin-top: 40vh;
+}
+
+
+#heading-section .container1 h3 {
+    color: white;
+    text-align: center;
+    padding: 0 10%;
+    letter-spacing: 1px;
+}
+
+#heading-section .container1 p {
+    color: white;
+    padding: 0 7%;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+
+/* login-section */
+#login-section{
+    float: left;
+    width: 66%;
+    height: 100vh;
+}
+
+#login-section #step {
+    float: right;
+    padding: 0;
+    margin: 30px;
+    color: #373737;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#login-section .container2 {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+
+#login-section .container2 form input,select {
+    color: black;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 15px 13px;
+    width: 90%;
+    border: lightgray 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#login-section .container2 form input::placeholder {
+    color: gray;
+    opacity: 1;
+}
+
+#login-section .container2 form input::-ms-reveal, input::-ms-clear {
+    display: none;
+}
+
+#login-section .container2 form select {
+    color: gray;
+}
+
+#login-section .container2 form select option {
+    color: black;
+}
+
+#login-section .container2 form #drop-down-icon{
+    pointer-events: none;
+}
+
+#login-section .container2 form label {
+    display: none;
+    color: #7F7F7F;
+    font-size: small;
+    position: absolute;
+    margin: -10px 0 0 7px;
+    padding: 0 5px;
+    background-color: white;
+}
+
+#login-section .container2 p{
+    font-size: 12px;
+}
+
+#login-section .container2 form p{
+    color: #7F7F7F;
+}
+
+#login-section .container2 .input-error {
+    display: none;
+    color: red;
+    margin-bottom: 10px;
+}
+
+#login-section .container2 form #submit-button{
+    border: 0;
+    color: gray;
+}
+
+#login-section .container2 #terms-privacy {
+    width: 90%;
+}
+
+#login-section .container2 .icon {
+    float: right;
+    margin-top: -30px;
+    margin-right: 14%;
+    position: relative;
+    cursor: pointer;
+}
+
+#login-section .container2 #signup-form:valid #submit-button {
+    background : #286EFA;
+    color: white;
+}
